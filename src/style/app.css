@@ -1,0 +1,74 @@
+.triangle-container > div{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.four-triangle{
+     width: 0;
+     border-bottom: 50px solid blue;
+     border-top: 50px solid green;
+     border-left: 50px solid orange;
+     border-right: 50px solid red;
+ }
+
+.top-triangle{
+    width: 0;
+    border-top: 50px solid green;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.bottom-triangle{
+    width: 0;
+    border-bottom: 50px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.left-triangle{
+    width: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid orange;
+    border-bottom: 50px solid transparent;
+}
+
+.right-triangle{
+    width: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid red;
+}
+
+.left-top-triangle{
+    width: 0;
+    border-top: 100px solid green;
+    border-right: 100px solid transparent;
+}
+
+.left-bottom-triangle{
+    width: 0;
+    border-top: 100px solid transparent;
+    border-left: 100px solid orange;
+}
+
+.right-top-triangle{
+    width: 0;
+    border-right: 100px solid blue;
+    border-bottom: 100px solid transparent;
+}
+
+.right-bottom-triangle{
+    width: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+}
+
+.equilateral-triangle{
+    width: 0;
+    border-bottom: 86px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+
