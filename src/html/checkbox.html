@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckBox</title>
+    <style type="text/css">
+        input[type=checkbox] {
+            display: none;
+        }
+
+        .checkbox-one {
+            width: 40px;
+            height: 10px;
+            background-color: #555;
+            margin: 20px auto;
+            position: relative;
+            border-radius: 3px;
+        }
+
+        .checkbox-one label {
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            background-color: #ccc;
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            transition: all .5s ease;
+            cursor: pointer;
+        }
+
+        .checkbox-one input[type=checkbox]:checked + label {
+            left: 27px;
+        }
+
+        .checkbox-two {
+            width: 25px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .checkbox-two label {
+            cursor: pointer;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            top: 0;
+            left: 0;
+        }
+        .checkbox-two label:after {
+            content: "";
+            opacity: 0.2;
+            position: absolute;
+            width: 4px;
+            height: 10px;
+            background-color: transparent;
+            border-bottom: 3px solid #333;
+            border-right: 3px solid #333;
+            transform: rotate(30deg);
+            top: 5px;
+            left: 9px;
+        }
+        .checkbox-two label:hover::after {
+            opacity: 0.5;
+        }
+        .checkbox-two input[type=checkbox]:checked + label {
+            background: aquamarine;
+        }
+        .checkbox-two input[type=checkbox]:checked + label:after {
+            opacity: 1;
+        }
+
+        .checkbox-three {
+            width: 25px;
+            margin: 60px auto;
+            position: relative;
+        }
+        .checkbox-three label {
+            cursor: pointer;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            top: 0;
+            left: 0;
+            transition: 200ms;
+        }
+        .checkbox-three label:hover {
+            background-color: #b8bdc2;
+            transition: 100ms;
+        }
+        .checkbox-three input[type=checkbox]:checked + label {
+            background: #0865c2;
+            transition: 200ms;
+        }
+        .checkbox-three input[type=checkbox]:checked + label:after {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 10px;
+            background-color: transparent;
+            border-bottom: 3px solid #fff;
+            border-right: 3px solid #fff;
+            transform: rotate(30deg);
+            top: 5px;
+            left: 9px;
+            transition: 200ms;
+        }
+    </style>
+</head>
+<body>
+<h3>Style Checkbox</h3>
+<div class="checkbox-one">
+    <input type="checkbox" id="checkbox1"/>
+    <label for="checkbox1"/>
+</div>
+<div class="checkbox-two">
+    <input type="checkbox" id="checkbox2"/>
+    <label for="checkbox2"/>
+</div>
+<div class="checkbox-three">
+    <input type="checkbox" id="checkbox3" />
+    <label for="checkbox3"/>
+</div>
+</body>
+</html>
