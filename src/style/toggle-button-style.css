@@ -1,0 +1,42 @@
+
+.toggle-button{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: fit-content;
+    user-select: none;
+}
+
+.toggle-button span{
+    display: inline-block;
+}
+
+.toggle-button > .title{
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.toggle-button > .state{
+    font-size: 12px;
+    margin-right: 6px;
+    min-width: 18px;
+}
+
+.toggle-button > .button{
+    width: 32px;
+    height: 18px;
+    border-radius: 10px;
+    padding: 1px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.toggle-button > .button > .circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    background-color: #fff;
+    transition: all 0.5s ease-out;
+
+}
